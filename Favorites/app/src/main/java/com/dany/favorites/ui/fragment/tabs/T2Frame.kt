@@ -26,6 +26,7 @@ class T2Frame : BaseFrame() {
     }
 
     override fun initData() {
+        isLazyLoaded = true
         Log.d("dan.y","==T2F==initData==")
     }
 

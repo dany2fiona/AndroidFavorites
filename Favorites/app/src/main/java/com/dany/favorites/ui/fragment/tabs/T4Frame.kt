@@ -27,6 +27,7 @@ class T4Frame : BaseFrame() {
     }
 
     override fun initData() {
+        isLazyLoaded = true
         Log.d("dan.y","==T4F==initData==")
     }
 
