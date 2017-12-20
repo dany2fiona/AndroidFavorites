@@ -2,14 +2,14 @@ package com.dany.favorites.ui.activity
 
 import android.os.Build
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.WindowManager
 import com.dany.favorites.R
 import com.dany.favorites.adapter.TestAdapter
+import com.dany.favorites.global.BaseActivity
 import kotlinx.android.synthetic.main.activity_collapsetoolbar.*
 
-class CollapseToolbarActivity : AppCompatActivity() {
+class CollapseToolbarActivity : BaseActivity() {
     var datas:ArrayList<Int> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class CollapseToolbarActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
             window.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
         }
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_collapsetoolbar)
         setSupportActionBar(toolbar_collapsing)
         toolbar_layout.setTitle("DesignLibrary..");
 //        toolbar_layout.isTitleEnabled = false

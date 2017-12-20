@@ -13,7 +13,7 @@ public class BaseFragment extends Fragment {
 	protected LayoutInflater inflater;
 	private View contentView;
 	private Context context;
-	private ViewGroup container;
+	protected ViewGroup container;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
