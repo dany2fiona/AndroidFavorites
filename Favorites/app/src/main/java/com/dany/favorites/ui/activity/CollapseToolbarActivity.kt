@@ -8,6 +8,8 @@ import com.dany.favorites.R
 import com.dany.favorites.adapter.TestAdapter
 import com.dany.favorites.global.BaseActivity
 import kotlinx.android.synthetic.main.activity_collapsetoolbar.*
+import kotlinx.android.synthetic.main.layout_navback.*
+import kotlinx.android.synthetic.main.toolbar_backandtitle_trans.*
 
 class CollapseToolbarActivity : BaseActivity() {
     var datas:ArrayList<Int> = arrayListOf()
@@ -22,10 +24,12 @@ class CollapseToolbarActivity : BaseActivity() {
         }
         setContentView(R.layout.activity_collapsetoolbar)
         setSupportActionBar(toolbar_collapsing)
-        toolbar_layout.setTitle("DesignLibrary..");
-//        toolbar_layout.isTitleEnabled = false
-        toolbar_layout.setCollapsedTitleTextColor(resources.getColor(R.color.white));
-        toolbar_layout.setExpandedTitleColor(resources.getColor(R.color.orange));
+        tv_title.text = "DesignLibrary.."
+        toolbar_back.setOnClickListener{scrollToFinishActivity()}
+//        toolbar_layout.setTitle("DesignLibrary..");
+        toolbar_layout.isTitleEnabled = false
+//        toolbar_layout.setCollapsedTitleTextColor(resources.getColor(R.color.white));
+//        toolbar_layout.setExpandedTitleColor(resources.getColor(R.color.orange));
         iv.setImageResource(R.mipmap.bg_test)
         recyclerview.layoutManager = LinearLayoutManager(this)
         fillData();

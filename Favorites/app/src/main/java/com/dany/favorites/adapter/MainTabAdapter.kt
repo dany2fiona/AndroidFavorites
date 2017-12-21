@@ -21,7 +21,7 @@ import com.dany.libs.viewpagerindicator.view.indicator.IndicatorViewPager
  *Created by dan.y on 2017/12/18 16:40.
  */
 class MainTabAdapter(fragmentManager: FragmentManager?) : IndicatorViewPager.IndicatorFragmentPagerAdapter(fragmentManager) {
-    private val tabNames:Array<String> = arrayOf("主页", "消息", "发现", "我")
+    private val tabNames:Array<String> = arrayOf("oreo", "nougat","marshmallow", "lolipop")
     private val tabIcons:Array<Int> = arrayOf(R.drawable.maintab_1_selector, R.drawable.maintab_2_selector, R.drawable.maintab_3_selector,
             R.drawable.maintab_4_selector)
     private val fragments = arrayListOf<BaseFrame>(HomeFrame(),T2Frame(),T3Frame(),T4Frame())
