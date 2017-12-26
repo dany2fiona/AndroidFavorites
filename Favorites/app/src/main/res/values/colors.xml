@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#ff9900</color><!--#303F9F-->
+    <color name="colorPrimaryDark">#00CD66</color><!--#303F9F-->
     <color name="colorAccent">#FF4081</color>
 
     <color name="white">#ffffffff</color>
@@ -19,5 +19,5 @@
     <color name="purple">#9932CC</color>
     <color name="green">#00CD66</color>
 
-    <color name="toolBarColor">#ff9900</color><!--#303F9F-->
+    <color name="toolBarColor">#00CD66</color><!--#303F9F-->
 </resources>

@@ -19,7 +19,7 @@ class MainActivity : BaseActivity() {
         mIndicator.setOnTransitionListener(OnTransitionTextListener().setColor(Color.RED, Color.GRAY))
         mIndicatorViewPager = IndicatorViewPager(mIndicator,mViewPager)
         mIndicatorViewPager?.adapter = MainTabAdapter(supportFragmentManager)
-        mViewPager.isCanScroll = false
+        mViewPager.isCanScroll = false/*true*/
         mViewPager.offscreenPageLimit = 4
         setSwipeBackEnable(false)
 }

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.dany.favorites.R
 import com.dany.favorites.global.BaseFrame
-import com.dany.favorites.ui.activity.CollapseToolbarActivity
+import com.dany.favorites.ui.activity.home.CollapseToolbarActivity
 
 
 /**
@@ -29,7 +29,7 @@ class HomeFrame:BaseFrame() {
         tv_tilte = find(R.id.tv_title) as TextView
         tv_tilte?.apply { text="hello"
             setOnClickListener{
-                var intent = Intent(context,CollapseToolbarActivity::class.java)
+                var intent = Intent(context, CollapseToolbarActivity::class.java)
                 startActivity(intent)
             }
         }

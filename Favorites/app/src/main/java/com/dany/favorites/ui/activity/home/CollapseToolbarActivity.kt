@@ -1,4 +1,4 @@
-package com.dany.favorites.ui.activity
+package com.dany.favorites.ui.activity.home
 
 import android.os.Build
 import android.os.Bundle
