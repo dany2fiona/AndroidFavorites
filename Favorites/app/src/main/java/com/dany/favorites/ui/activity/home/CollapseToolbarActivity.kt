@@ -16,7 +16,7 @@ class CollapseToolbarActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (Build.VERSION.SDK_INT >= /*Build.VERSION_CODES.LOLLIPOP*/21 ) {//kotlin版本报错
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP/*21*/ ) {//kotlin版本报错---anko版本（0.10）问题识别不到LOLLIPOP
             //全屏模式显示statusbar
             val window = window
             window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)

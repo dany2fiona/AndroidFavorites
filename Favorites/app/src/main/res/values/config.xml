@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="baseUrl"> http://www.tuling123.com/openapi/</string>
+    <string name="logLevel">2</string>
+</resources>

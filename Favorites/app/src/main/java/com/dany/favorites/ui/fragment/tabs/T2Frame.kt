@@ -1,5 +1,6 @@
 package com.dany.favorites.ui.fragment.tabs
 
+import android.content.Intent
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
@@ -12,7 +13,9 @@ import com.dany.favorites.adapter.FlowmAdapter
 import com.dany.favorites.contract.bridge.OnItemClickListener
 import com.dany.favorites.global.BaseActivity
 import com.dany.favorites.global.BaseFrame
-import com.dany.libs.wxrecyclerview.layoutManager.FlowLayoutManager
+import com.dany.favorites.ui.activity.t2.LoadBigImageActivity
+import com.dany.favorites.ui.activity.t2.RoboActivity
+import com.dany.favorites.widget.recyclerview.FlowLayoutManager
 import kotlinx.android.synthetic.main.layout_frame_t2.*
 import org.jetbrains.anko.toast
 
@@ -44,12 +47,15 @@ class T2Frame : BaseFrame(), OnItemClickListener {
 
     override fun onItemClick(view: View, position: Int) {
         activity.toast("position:"+position)
+        var intent:Intent ?= null
         when(position){
             0 -> {
-
+                intent = Intent(context, LoadBigImageActivity::class.java)
+                startActivity(intent)
             }
             1 -> {
-
+                intent = Intent(context, RoboActivity::class.java)
+                startActivity(intent)
             }
         }
     }
