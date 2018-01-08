@@ -1,8 +1,10 @@
 package com.dany.favorites.global
 
 import android.app.Activity
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
+import android.view.WindowManager
 import com.dany.favorites.widget.dialog.LoadingDialog
 import com.dany.favorites.widget.dialog.LoadingDialog.Companion.createProgrssDialog
 import com.dany.libs.swipeback.app.SwipeBackActivity
@@ -15,6 +17,12 @@ open class BaseActivity:SwipeBackActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP/*21*/ ) {//kotlin版本报错---anko版本（0.10）问题识别不到LOLLIPOP
+            //全屏模式显示statusbar
+            val window = window
+            window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
+            window.addFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN)
+        }
     }
 
     protected fun getRootContext():Activity = getRootContext(this)

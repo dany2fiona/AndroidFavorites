@@ -11,13 +11,14 @@ import com.dany.favorites.extensions.ctx
 import kotlinx.android.synthetic.main.layout_item_flowm.view.*
 import java.util.*
 
+@Suppress("DEPRECATION")
 /**
  *Created by dan.y on 2017/12/14 11:52.
  */
 class FlowmAdapter(var items: ArrayList<String>): RecyclerView.Adapter<FlowmAdapter.ViewHolder>(),View.OnClickListener {
     public var mListener:OnItemClickListener?=null
     override fun onClick(v: View?) {
-        mListener!!.onItemClick(v!!, v!!.getTag() as Int)
+        mListener!!.onItemClick(v!!, v.getTag() as Int)
     }
     private val colors: ArrayList<Int> = arrayListOf(
             R.color.colorAccent,

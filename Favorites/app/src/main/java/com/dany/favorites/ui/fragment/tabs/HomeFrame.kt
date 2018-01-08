@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.dany.favorites.R
+import com.dany.favorites.global.BaseActivity
 import com.dany.favorites.global.BaseFrame
 import com.dany.favorites.ui.activity.home.CollapseToolbarActivity
+import kotlinx.android.synthetic.main.layout_frame_t2.*
 
 
 /**
@@ -19,6 +21,7 @@ import com.dany.favorites.ui.activity.home.CollapseToolbarActivity
  */
 class HomeFrame:BaseFrame() {
     var tv_tilte:TextView?=null
+    var tv_col:TextView?=null
 
     override fun getBaseLayout(inflater: LayoutInflater, container: ViewGroup?): View {
         return LayoutInflater.from(context).inflate(R.layout.layout_frame_home,container, false)
@@ -26,8 +29,11 @@ class HomeFrame:BaseFrame() {
 
     override fun initView() {
         Log.d("dan.y","==home==initView==")
+        (activity as BaseActivity).setSupportActionBar(toolbar)
         tv_tilte = find(R.id.tv_title) as TextView
-        tv_tilte?.apply { text="hello"
+        tv_tilte!!.text = "helloT1"
+        tv_col = find(R.id.tv_collap) as TextView
+        tv_col?.apply { text="hello"
             setOnClickListener{
                 var intent = Intent(context, CollapseToolbarActivity::class.java)
                 startActivity(intent)

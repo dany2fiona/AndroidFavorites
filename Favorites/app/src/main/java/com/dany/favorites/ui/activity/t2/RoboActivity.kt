@@ -2,7 +2,6 @@ package com.dany.favorites.ui.activity.t2
 
 import android.os.Bundle
 import android.view.View
-import android.widget.ScrollView
 import com.dany.favorites.R
 import com.dany.favorites.bean.RoboBean
 import com.dany.favorites.contract.robo.RoboContract

@@ -1,7 +1,6 @@
 package com.dany.favorites.ui.fragment.tabs
 
 import android.content.Intent
-import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,6 +14,7 @@ import com.dany.favorites.global.BaseActivity
 import com.dany.favorites.global.BaseFrame
 import com.dany.favorites.ui.activity.t2.LoadBigImageActivity
 import com.dany.favorites.ui.activity.t2.RoboActivity
+import com.dany.favorites.ui.activity.t2.zxingdemo.ZxingDemoActivity
 import com.dany.favorites.widget.recyclerview.FlowLayoutManager
 import kotlinx.android.synthetic.main.layout_frame_t2.*
 import org.jetbrains.anko.toast
@@ -57,6 +57,10 @@ class T2Frame : BaseFrame(), OnItemClickListener {
                 intent = Intent(context, RoboActivity::class.java)
                 startActivity(intent)
             }
+            2 -> {
+                intent = Intent(context, ZxingDemoActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 
@@ -66,7 +70,7 @@ class T2Frame : BaseFrame(), OnItemClickListener {
 //        }
         datas.add("加载高清大图demo")
         datas.add("Rxjava+Retrofit+Okh3网络接口")
-        datas.add("滴滴打驴被叫停")
+        datas.add("二维码功能组")
         datas.add("博士被骗23万")
         datas.add("南非诞生双脸小猫")
         datas.add("江西中学女生坠亡")

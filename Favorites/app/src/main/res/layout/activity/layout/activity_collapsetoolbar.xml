@@ -39,10 +39,8 @@
 
          <android.support.v7.widget.Toolbar
              android:id="@+id/toolbar_collapsing"
-             android:layout_width="match_parent"
-             android:layout_height="@dimen/toolbar_height"
+             style="@style/toolbar_layout"
              app:layout_collapseMode="pin"
-             android:layout_marginTop="16dp"
              android:background="@color/transparent"
              app:contentInsetStart="0dp"
              app:contentInsetLeft="0dp"

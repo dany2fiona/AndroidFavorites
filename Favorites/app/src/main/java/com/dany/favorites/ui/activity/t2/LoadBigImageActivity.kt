@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.support.v7.graphics.Palette
 import android.util.Log
 import android.view.View
-import android.view.WindowManager
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.Target
@@ -108,13 +107,14 @@ class LoadBigImageActivity : BaseActivity(),View.OnClickListener{
                     var rgb:Int ?= a?.rgb
                     if(rgb!=null){
                         fl_toolbar.setBackgroundColor(colorEasy(rgb))//ffb8b0b0
-                        if (Build.VERSION.SDK_INT >= 21) {
-                            val window = this@LoadBigImageActivity.getWindow()
-                            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                            window.setStatusBarColor(colorEasy(rgb))
-                            //底部导航栏
-//                            window.setNavigationBarColor(colorEasy(rgb));
-                        }
+                        activity_main.setBackgroundColor(colorEasy(rgb))//ffb8b0b0
+//                        if (Build.VERSION.SDK_INT >= 21) {
+//                            val window = this@LoadBigImageActivity.getWindow()
+//                            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//                            window.setStatusBarColor(colorEasy(rgb))
+//                            //底部导航栏
+////                            window.setNavigationBarColor(colorEasy(rgb));
+//                        }
                     }
                 }
             }

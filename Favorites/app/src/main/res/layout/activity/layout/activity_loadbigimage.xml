@@ -5,14 +5,14 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/green"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"
+        style="@style/toolbar_layout"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp">
         <!--添加Toolbar的子控件-->
@@ -21,7 +21,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
 
         <LinearLayout
             android:id="@+id/ll_big"

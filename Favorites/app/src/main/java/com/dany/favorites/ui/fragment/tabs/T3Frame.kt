@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.dany.favorites.R
+import com.dany.favorites.global.BaseActivity
 import com.dany.favorites.global.BaseFrame
 import kotlinx.android.synthetic.main.layout_frame_home.*
 import org.jetbrains.anko.find
@@ -15,6 +16,7 @@ import org.jetbrains.anko.find
  */
 class T3Frame : BaseFrame() {
     var tv_tilte:TextView?=null
+    var tv_col:TextView?=null
 
     override fun getBaseLayout(inflater: LayoutInflater, container: ViewGroup?): View {
         return LayoutInflater.from(context).inflate(R.layout.layout_frame_home,container, false)
@@ -22,8 +24,11 @@ class T3Frame : BaseFrame() {
 
     override fun initView() {
         Log.d("dan.y","==T3F==initView==")
+        (activity as BaseActivity).setSupportActionBar(toolbar)
         tv_tilte = find(R.id.tv_title) as TextView
-        tv_tilte?.text="hello3"
+        tv_tilte?.text="helloT3"
+        tv_col = find(R.id.tv_collap) as TextView
+        tv_col?.text="hello3"
     }
 
     override fun initData() {

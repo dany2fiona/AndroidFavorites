@@ -1,6 +1,5 @@
 package com.dany.favorites.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -17,6 +16,7 @@ import com.dany.favorites.ui.fragment.tabs.T3Frame
 import com.dany.favorites.ui.fragment.tabs.T4Frame
 import com.dany.libs.viewpagerindicator.view.indicator.IndicatorViewPager
 
+@Suppress("DEPRECATION")
 /**
  *Created by dan.y on 2017/12/18 16:40.
  */

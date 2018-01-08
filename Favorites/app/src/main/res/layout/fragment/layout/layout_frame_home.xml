@@ -4,23 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg">
-   <!-- &lt;!&ndash;
-  ?attr/actionBarSize:表示根据屏幕的分辨率采用系统默认的高度
-  如果低版本也要使用的话,则需要使用v7包的,否则只有api21上才能有效
-  &ndash;&gt;
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        style="@style/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
         app:contentInsetStart="0dp"
         app:contentInsetLeft="0dp"
         >
-        &lt;!&ndash;添加Toolbar的子控件&ndash;&gt;
+
         <include layout="@layout/toolbar_title"/>
 
-    </android.support.v7.widget.Toolbar>-->
+    </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:id="@+id/tv_title"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/tv_collap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"

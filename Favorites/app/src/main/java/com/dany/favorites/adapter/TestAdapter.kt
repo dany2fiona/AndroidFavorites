@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.layout_item_test.view.*
 import java.util.*
 
 
+@Suppress("DEPRECATION")
 /**
  *Created by dan.y on 2017/12/14 11:52.
  */
