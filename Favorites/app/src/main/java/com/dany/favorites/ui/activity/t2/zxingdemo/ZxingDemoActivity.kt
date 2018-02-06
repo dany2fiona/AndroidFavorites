@@ -46,9 +46,10 @@ class ZxingDemoActivity:BaseActivity(),View.OnClickListener {
             R.id.btn_qrcode -> {
                 intent = Intent(this@ZxingDemoActivity,QRcodeActivity::class.java)
                 startActivity(intent)
-            }
+        }
             R.id.btn_generatecode -> {
-                toast("生成二维码")
+                intent = Intent(this@ZxingDemoActivity,GenerateCodeActivity::class.java)
+                startActivity(intent)
             }
             else -> {}
         }

@@ -54,6 +54,9 @@
         <activity android:name="com.dany.favorites.ui.activity.t2.zxingdemo.QRcodeActivity"
             android:screenOrientation="portrait"
             />
+        <activity android:name="com.dany.favorites.ui.activity.t2.zxingdemo.GenerateCodeActivity"
+            android:screenOrientation="portrait"
+            />
 
         <meta-data
             android:name="com.dany.favorites.common.glide.MyGlideModule"
