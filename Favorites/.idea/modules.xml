@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Favorites.iml" filepath="$PROJECT_DIR$/Favorites.iml" />
+      <module fileurl="file://F:\workspace\ws_mygithub\AndroidFavorites\Favorites\Favorites.iml" filepath="F:\workspace\ws_mygithub\AndroidFavorites\Favorites\Favorites.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\workspace\ws_mygithub\AndroidFavorites\Favorites\app\app.iml" filepath="F:\workspace\ws_mygithub\AndroidFavorites\Favorites\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/libs.iml" filepath="$PROJECT_DIR$/libs/libs.iml" />
+      <module fileurl="file://F:\workspace\ws_mygithub\AndroidFavorites\Favorites\libs\libs.iml" filepath="F:\workspace\ws_mygithub\AndroidFavorites\Favorites\libs\libs.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefreshListViewLibrary/pulltorefreshlistviewlibrary.iml" filepath="$PROJECT_DIR$/pullToRefreshListViewLibrary/pulltorefreshlistviewlibrary.iml" />
+      <module fileurl="file://F:\workspace\ws_mygithub\AndroidFavorites\Favorites\pullToRefreshListViewLibrary\pulltorefreshlistviewlibrary.iml" filepath="F:\workspace\ws_mygithub\AndroidFavorites\Favorites\pullToRefreshListViewLibrary\pulltorefreshlistviewlibrary.iml" />
     </modules>
   </component>
 </project>
